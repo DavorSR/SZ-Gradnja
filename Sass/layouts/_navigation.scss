@@ -1,0 +1,35 @@
+nav {
+    background: rgb(40, 34, 34);
+    display: flex;
+    
+
+    .logo {
+        width: 20%;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 100%;
+        padding: 0 50px;
+        align-items: center;
+        
+
+        li {
+            padding: 0 40px;
+            font-size: clamp(1em, 1.4vw, 3rem);
+           
+            a{
+                color: white;
+
+                &:hover{
+                    color: #e0d311;
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.slogan {
+    background: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.5)),
+        url("../Assets/images/header.jpg") no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+    text-align: left;
+    color: white;
+
+    &_wrrap {
+        width: 60%;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+
+        &_intro {
+            font-size: $basicParagraf;
+            padding: 0.5rem 0;
+            font-style: italic;
+        }
+
+        &_ime {
+            font-size:$mainHeading;
+            padding: 0 0 0.5rem 0;
+
+            span {
+                color: $mainColor;
+            }
+        }
+
+        &_moto {
+            font-size: $thirdHeading;
+        }
+
+        &_misija {
+            font-size: $basicParagraf;
+            font-style: italic;
+            padding: 0.5rem 0 3rem 0;
+        }
+    }
+}
+
+.slogan_wrrap > a {
+    color: black;
+    font-size: 1.5rem;
+    background: $mainColor;
+    padding: 20px;
+    border-radius: 10px;
+
+    &:hover{
+        background: white;
+        transition: 0.2s ease-in;
+    }
+}

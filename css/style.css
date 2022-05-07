@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,300;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: #282222;
+  display: flex;
+}
+nav .logo {
+  width: 20%;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 100%;
+  padding: 0 50px;
+  align-items: center;
+}
+nav ul li {
+  padding: 0 40px;
+  font-size: clamp(1em, 1.4vw, 3rem);
+}
+nav ul li a {
+  color: white;
+}
+nav ul li a:hover {
+  color: #e0d311;
+}
+
+.slogan {
+  background: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.5)), url("../Assets/images/header.jpg") no-repeat center center/cover;
+  height: 80vh;
+  position: relative;
+  text-align: left;
+  color: white;
+}
+.slogan_wrrap {
+  width: 60%;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+.slogan_wrrap_intro {
+  font-size: clamp(1em, 1.7vw, 3rem);
+  padding: 0.5rem 0;
+  font-style: italic;
+}
+.slogan_wrrap_ime {
+  font-size: clamp(1.5rem, 5vw, 6rem);
+  padding: 0 0 0.5rem 0;
+}
+.slogan_wrrap_ime span {
+  color: #e0d311;
+}
+.slogan_wrrap_moto {
+  font-size: clamp(1rem, 3vw, 4rem);
+}
+.slogan_wrrap_misija {
+  font-size: clamp(1em, 1.7vw, 3rem);
+  font-style: italic;
+  padding: 0.5rem 0 3rem 0;
+}
+
+.slogan_wrrap > a {
+  color: black;
+  font-size: 1.5rem;
+  background: #e0d311;
+  padding: 20px;
+  border-radius: 10px;
+}
+.slogan_wrrap > a:hover {
+  background: white;
+  transition: 0.2s ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */

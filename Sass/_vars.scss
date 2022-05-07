@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+$mainColor: #e0d311;
+
+//Text Sizes
+
+$mainHeading:clamp(1.5rem, 5vw, 6rem);
+$secondHeading: clamp(1.1rem, 4vw, 4.5rem);
+$thirdHeading: clamp(1rem, 3vw, 4rem);
+$basicParagraf: clamp(1em, 1.7vw, 3rem);
