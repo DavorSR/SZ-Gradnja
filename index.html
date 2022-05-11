@@ -6,25 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Zekanović Gradnja</title>
+    <script src="https://kit.fontawesome.com/e337240c0d.js" crossorigin="anonymous"></script>
+    <script defer src="/js/script.js"></script>
+    <title>SZ Gradnja</title>
 </head>
 
 <body>
     <header>
+        <!-- Navigacija sa logom -->
         <nav>
-            <div class="logo"><img src="/Assets/icons/zekanovicLogo.png" alt=""></div>
+            <div class="logo">
+                <img src="/Assets/icons/zekanovicLogo.png" alt="">
+            </div>
             <ul>
                 <li><a href="#">Početna</a></li>
-                <li><a href="#">Galerija</a></li>
-                <li><a href="#">O Nama</a></li>
+                <li><a href="/galerija.html">Galerija</a></li>
+                <li><a href="#oNama">O Nama</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
-
+        <!-- Header slika + slogan firme -->
         <div class="slogan">
-            <div class="slogan_wrrap">
+            <div class="load slogan_wrrap">
                 <p class="slogan_wrrap_intro">Mi gradimo vašu kuću iz snova</p>
-                <h1 class="slogan_wrrap_ime"><span>Zekanović</span> Gradnja</h1>
+                <h1 class="slogan_wrrap_ime"><span>SZ</span> Gradnja</h1>
                 <h3 class="slogan_wrrap_moto">Brza i kvalitetna gradnja</h3>
                 <p class="slogan_wrrap_misija">Visoko i niskogradnja po najnovijim standardima i sistemu ključ u ruke.
                     Kontaktirajte nas za više detalja...</p>
@@ -36,13 +41,81 @@
     </header>
 
     <main>
+        <!-- Sekcija za konsultacije i pitanja oko radova -->
         <section>
-            <div class="konsultacije">
+            <div class="load konsultacije">
                 <h2>Potrebna vam je procena ili ponuda?</h2>
                 <a href="#">Kontaktirajte nas &#x2192;</a>
             </div>
         </section>
+
+        <!--Cime se bavimo-->
+
+        <section>
+
+
+            <h2 class="load naslov"><span>Zajedno</span> gradimo vaš dom i uspomene</h2>
+
+
+            <div class="izdvajamo load ">
+                <div class="izdvajamo_box">
+                    <i class="fas fa-building fa-4x"></i>
+                    <h3>Visokogradnja</h3>
+                    <p>Višegodišnje iskustvo na stambenim i industrijskim objektima visokogradnje. Od temelja do
+                        krova...</p>
+                </div>
+                <div class="izdvajamo_box2">
+                    <i class="fas fa-road fa-4x"></i>
+                    <h3>Niskogradnja</h3>
+                    <p>Radovima u niskogradnji smatraju svi objekti koji se nalaze na zemlji (bazeni, putevi, parkinzi
+                        itd)...</p>
+                </div>
+                <div class="izdvajamo_box2">
+                    <i class="fas fa-snowplow fa-4x"></i>
+
+                    <h3>Zemljani radovi</h3>
+                    <p>Planiranje i izvodjenje svih vrsta zemljanih radova, sa odvozom zemlje.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sekcija zasto nas izabrati -->
+        <section id="oNama">
+         
+                <h2 class="naslov">ZAŠTO BAŠ SZ Gradnja</h2>
+                <p class="razlozi">Nekoliko dobrih razroga zašto da odaberete <strong>SZ gradnju</strong> kao partnera u
+                    izvođenju
+                    radova.</p>
+                <p>
+                    Iako je SZ Gradnja relativno mlada kompanja(3 godine) mi se trudimo da ozbiljno i profesionalno
+                    obavljamo svoju delatnost.
+                    Sa svakim novim objektom podižemo kvalitet gradnje.SZ Gradnja prati nove trendove u izgradnji
+                    objekata i koristimo najsavremenije materijale,sa ciljem poboljšanja kvaliteta i smanjenja
+                    troškova.</p>
+                <p>SZ Gradnja je uvek na raspolaganju našim cenjenim klijentima da izađemo u susret po pitanju svih
+                    predloga , sugestija i želja. Našim klijentima je omogućen uvid u kvalitet gradnje , tako što će biti
+                    upoznati sa vrstom ugradnih materijala poput opeke, crepa , kvaliteta betona....
+                </p>
+          
+        </section>
     </main>
+
+    <footer id="contact">
+
+       <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Djurdjevo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+       <form action="" method="post">
+           <label for="ime">Vaše ime</label><br>
+           <input type="text" name="ime"><br>
+           <label for="email">Vaš email</label><br>
+           <input type="email" name="email"><br>
+           <label for="poruka">Vaša poruka</label><br>
+           <textarea name="poruka" id="" cols="30" rows="10"></textarea>
+       </form>
+
+
+    </footer>
 
 </body>
 
