@@ -2,7 +2,8 @@ $mainColor: rgb(255, 195, 31);
 
 //Text Sizes
 
-$mainHeading: clamp(1.5rem, 5vw, 6rem);
-$secondHeading: clamp(1.1rem, 2.5vw, 4.5rem);
-$thirdHeading: clamp(1rem, 3vw, 4rem);
-$basicParagraf: clamp(1em, 1.7vw, 3rem);
+$mainHeading: clamp(1.5rem, 6vw, 10rem);
+$secondHeading: clamp(1.1rem, 3vw, 7rem);
+$thirdHeading: clamp(1rem, 1.8vw, 6rem);
+$basicParagraf: clamp(1em, 1.5vw, 4rem);
+$buttons: clamp(1.5rem, 2vw, 5rem)

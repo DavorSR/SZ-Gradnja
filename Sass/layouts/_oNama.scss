@@ -1,0 +1,22 @@
+.oNama {
+    background: #d5dbdb;
+    background-image: linear-gradient(90deg, #d5dbdb, orange);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+
+    h2 {
+        padding-top: 40px;
+    }
+
+    .razlozi {
+        font-size: $thirdHeading;
+        padding-top: 30px;
+    }
+    p {
+        padding: 3vh 10%;
+        text-align: left;
+        font-size: $basicParagraf;
+    }
+}

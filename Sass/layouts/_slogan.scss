@@ -5,12 +5,24 @@
     position: relative;
     text-align: left;
     color: white;
+    @include eXSmall {
+        height: 55vh;
+    }
+    @include tablet{
+        height: 45vh;
+    }
 
     &_wrrap {
         width: 60%;
         position: absolute;
         top: 25%;
         left: 5%;
+        @include eXSmall {
+            width: 100%;
+        }
+        @include tablet {
+            width: 100%;
+        }
 
         &_intro {
             font-size: $basicParagraf;
@@ -19,7 +31,7 @@
         }
 
         &_ime {
-            font-size:$mainHeading;
+            font-size: $mainHeading;
             padding: 0 0 0.5rem 0;
 
             span {
@@ -41,14 +53,13 @@
 
 .slogan_wrrap > a {
     color: black;
-    font-size: 1.5rem;
+    font-size: $buttons;
     background: $mainColor;
     padding: 20px;
     border-radius: 10px;
 
-    &:hover{
+    &:hover {
         background: white;
         transition: 0.2s ease-in;
     }
-
 }

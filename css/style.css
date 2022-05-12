@@ -22,12 +22,15 @@
 nav {
   background: #282222;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav .logo {
+  padding: 2vh 0;
   width: 20%;
   text-align: center;
 }
-nav ul {
+nav .nav-menu {
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -35,15 +38,66 @@ nav ul {
   padding: 0 50px;
   align-items: center;
 }
-nav ul li {
+@media (max-width: 505px) {
+  nav .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background: #282222;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+  nav .nav-menu.active {
+    left: 0;
+  }
+}
+nav .nav-menu .nav-link {
   padding: 0 40px;
   font-size: clamp(1em, 1.4vw, 3rem);
 }
-nav ul li a {
+@media (max-width: 505px) {
+  nav .nav-menu .nav-link {
+    margin: 16px 0;
+  }
+}
+nav .nav-menu .nav-link a {
   color: white;
 }
-nav ul li a:hover {
+nav .nav-menu .nav-link a:hover {
   color: #e0d311;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 0 20px;
+}
+@media (max-width: 505px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 .slogan {
@@ -53,36 +107,56 @@ nav ul li a:hover {
   text-align: left;
   color: white;
 }
+@media (max-width: 505px) {
+  .slogan {
+    height: 55vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .slogan {
+    height: 45vh;
+  }
+}
 .slogan_wrrap {
   width: 60%;
   position: absolute;
   top: 25%;
   left: 5%;
 }
+@media (max-width: 505px) {
+  .slogan_wrrap {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .slogan_wrrap {
+    width: 100%;
+  }
+}
 .slogan_wrrap_intro {
-  font-size: clamp(1em, 1.7vw, 3rem);
+  font-size: clamp(1em, 1.5vw, 4rem);
   padding: 0.5rem 0;
   font-style: italic;
 }
 .slogan_wrrap_ime {
-  font-size: clamp(1.5rem, 5vw, 6rem);
+  font-size: clamp(1.5rem, 6vw, 10rem);
   padding: 0 0 0.5rem 0;
 }
 .slogan_wrrap_ime span {
   color: #ffc31f;
 }
 .slogan_wrrap_moto {
-  font-size: clamp(1rem, 3vw, 4rem);
+  font-size: clamp(1rem, 1.8vw, 6rem);
 }
 .slogan_wrrap_misija {
-  font-size: clamp(1em, 1.7vw, 3rem);
+  font-size: clamp(1em, 1.5vw, 4rem);
   font-style: italic;
   padding: 0.5rem 0 3rem 0;
 }
 
 .slogan_wrrap > a {
   color: black;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 5rem);
   background: #ffc31f;
   padding: 20px;
   border-radius: 10px;
@@ -100,13 +174,37 @@ nav ul li a:hover {
   padding: 0 5rem;
   align-items: center;
 }
+@media (max-width: 505px) {
+  .konsultacije {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .konsultacije {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+}
 .konsultacije h2 {
-  font-size: clamp(1.1rem, 2.5vw, 4.5rem);
+  font-size: clamp(1.1rem, 3vw, 7rem);
+}
+@media (max-width: 505px) {
+  .konsultacije h2 {
+    padding-bottom: 3vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .konsultacije h2 {
+    padding-bottom: 3vh;
+  }
 }
 .konsultacije a {
   background-color: #282222;
   color: white;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 5rem);
   padding: 10px;
   border-radius: 10px;
 }
@@ -121,6 +219,19 @@ nav ul li a:hover {
 }
 .galerija_komentar {
   padding: 0 0 20px 70px;
+}
+@media (max-width: 505px) {
+  .galerija_komentar {
+    text-align: center;
+    padding: 0;
+  }
+}
+.galerija_komentar h3 {
+  font-size: clamp(1rem, 1.8vw, 6rem);
+  padding-bottom: 2vh;
+}
+.galerija_komentar p {
+  font-size: clamp(1em, 1.5vw, 4rem);
 }
 .galerija_slike {
   justify-content: center;
@@ -183,17 +294,27 @@ nav ul li a:hover {
   border-bottom: 2px solid #ffc31f;
   width: fit-content;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: clamp(1.1rem, 3vw, 7rem);
 }
 .naslov span {
   color: #ffc31f;
 }
 
 .izdvajamo {
-  margin-top: 100px;
+  margin-top: 5vh;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 50px;
+}
+@media (max-width: 505px) {
+  .izdvajamo {
+    flex-direction: column;
+  }
+}
+@media (min-width: 2160px) {
+  .izdvajamo {
+    justify-content: center;
+  }
 }
 .izdvajamo_box {
   text-align: center;
@@ -203,13 +324,23 @@ nav ul li a:hover {
   margin: 10px;
   color: white;
 }
+@media (max-width: 505px) {
+  .izdvajamo_box {
+    width: 100%;
+  }
+}
+@media (min-width: 2160px) {
+  .izdvajamo_box {
+    width: 35%;
+  }
+}
 .izdvajamo_box h3 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 1.8vw, 6rem);
   padding: 0.5rem;
 }
 .izdvajamo_box p {
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: clamp(1em, 1.5vw, 4rem);
   text-align: center;
   font-style: italic;
   margin: 0 2rem;
@@ -221,20 +352,30 @@ nav ul li a:hover {
   padding: 2rem 0;
   margin: 10px;
 }
+@media (max-width: 505px) {
+  .izdvajamo_box2 {
+    width: 100%;
+  }
+}
+@media (min-width: 2160px) {
+  .izdvajamo_box2 {
+    width: 35%;
+  }
+}
 .izdvajamo_box2 h3 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 1.8vw, 6rem);
   padding: 0.5rem;
   color: black;
 }
 .izdvajamo_box2 p {
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: clamp(1em, 1.5vw, 4rem);
   text-align: center;
   font-style: italic;
   margin: 0 2rem;
 }
 
-#oNama {
+.oNama {
   background: #d5dbdb;
   background-image: linear-gradient(90deg, #d5dbdb, orange);
   display: flex;
@@ -242,35 +383,41 @@ nav ul li a:hover {
   justify-content: center;
   height: 100%;
 }
-#oNama h2 {
+.oNama h2 {
   padding-top: 40px;
 }
-#oNama .razlozi {
-  font-size: clamp(1em, 1.7vw, 3rem);
+.oNama .razlozi {
+  font-size: clamp(1rem, 1.8vw, 6rem);
   padding-top: 30px;
 }
-#oNama p {
+.oNama p {
   padding: 3vh 10%;
   text-align: left;
+  font-size: clamp(1em, 1.5vw, 4rem);
 }
 
-#contact {
-  background: black;
-  padding: 4vh 0;
+footer {
+  background: #1a1717;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  font-size: clamp(0.7rem, 1.3vw, 2.5rem);
+  font-weight: 900;
+  color: gray;
 }
-#contact form {
-  color: white;
-  font-size: 1.2rem;
-  outline: none;
+footer p {
+  margin: 25px 80px;
 }
-#contact form input {
-  width: 20vw;
-  height: 5vh;
+footer a {
+  padding: 1vh 1vw;
+  align-self: center;
+  color: #fff;
 }
-#contact form textarea {
-  width: 20vw;
+footer a:hover {
+  background-color: white;
+  padding: 1vh 1vw;
+  color: black;
+  transition: 0.1s ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */

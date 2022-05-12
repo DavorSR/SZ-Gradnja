@@ -16,14 +16,19 @@
         <!-- Navigacija sa logom -->
         <nav>
             <div class="logo">
-                <img src="/Assets/icons/zekanovicLogo.png" alt="">
+                <embed src="/Assets/icons/zekanovicLogo.svg">
             </div>
-            <ul>
-                <li><a href="#">Početna</a></li>
-                <li><a href="/galerija.html">Galerija</a></li>
-                <li><a href="#oNama">O Nama</a></li>
-                <li><a href="#">Kontakt</a></li>
+            <ul class="nav-menu">
+                <li class="nav-link"><a href="#">Početna</a></li>
+                <li class="nav-link"><a href="/galerija.html">Galerija</a></li>
+                <li class="nav-link"><a href="#oNama">O Nama</a></li>
+                <li class="nav-link"><a href="#">Kontakt</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <!-- Header slika + slogan firme -->
         <div class="slogan">
@@ -57,7 +62,7 @@
             <h2 class="load naslov"><span>Zajedno</span> gradimo vaš dom i uspomene</h2>
 
 
-            <div class="izdvajamo load ">
+            <div class="izdvajamo load">
                 <div class="izdvajamo_box">
                     <i class="fas fa-building fa-4x"></i>
                     <h3>Visokogradnja</h3>
@@ -81,10 +86,10 @@
         </section>
 
         <!-- Sekcija zasto nas izabrati -->
-        <section id="oNama">
+        <section class="oNama load">
          
                 <h2 class="naslov">ZAŠTO BAŠ SZ Gradnja</h2>
-                <p class="razlozi">Nekoliko dobrih razroga zašto da odaberete <strong>SZ gradnju</strong> kao partnera u
+                <p class="razlozi">Nekoliko dobrih razloga zašto da odaberete <strong>SZ gradnju</strong> kao partnera u
                     izvođenju
                     radova.</p>
                 <p>
@@ -101,20 +106,9 @@
         </section>
     </main>
 
-    <footer id="contact">
-
-       <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Djurdjevo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-
-       <form action="" method="post">
-           <label for="ime">Vaše ime</label><br>
-           <input type="text" name="ime"><br>
-           <label for="email">Vaš email</label><br>
-           <input type="email" name="email"><br>
-           <label for="poruka">Vaša poruka</label><br>
-           <textarea name="poruka" id="" cols="30" rows="10"></textarea>
-       </form>
-
-
+    <footer>
+        <p>&copy; 2022 ALL RIGHTS RESERVED</p>
+        <a href="https://www.facebook.com/sinisa.zekanovic.35" target="_blank" class="fa fa-facebook fa-2x"></a>
     </footer>
 
 </body>

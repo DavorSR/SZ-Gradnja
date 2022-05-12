@@ -6,111 +6,36 @@
 @import "layouts/slogan";
 @import "layouts/konsultacije";
 @import "layouts/galerija";
+@import "layouts/izdvajamo";
+@import "layouts/oNama";
 
-.naslov {
-    padding-top: 4rem;
-    border-bottom: 2px solid $mainColor;
-    width: fit-content;
-    margin: 0 auto;
-    font-size: 2rem;
 
-    span {
-        color: $mainColor;
-    }
-}
 
-.izdvajamo {
-    margin-top: 100px;
+
+footer {
+    background: rgb(26, 23, 23);
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 50px;
-
-    &_box {
-        text-align: center;
-        background-color: $mainColor;
-        width: 30%;
-        padding: 2rem 0;
-        margin: 10px;
-        color: white;
-
-        h3 {
-            font-size: 2rem;
-            padding: 0.5rem;
-        }
-
-        p {
-            padding-top: 1rem;
-            font-size: 1rem;
-            text-align: center;
-            font-style: italic;
-            margin: 0 2rem;
-        }
-    }
-
-    &_box2 {
-        text-align: center;
-        border: 5px solid $mainColor;
-        width: 30%;
-        padding: 2rem 0;
-        margin: 10px;
-
-        h3 {
-            font-size: 2rem;
-            padding: 0.5rem;
-            color: black;
-        }
-
-        p {
-            padding-top: 1rem;
-            font-size: 1rem;
-            text-align: center;
-            font-style: italic;
-            margin: 0 2rem;
-        }
-    }
-}
-
-#oNama {
-    background: #d5dbdb;
-    background-image: linear-gradient(90deg, #d5dbdb,orange);
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    height: 100%;
+    font-size: clamp(0.7rem, 1.3vw, 2.5rem);
+    font-weight: 900;
+    color: gray;
 
-    h2 {
-        padding-top: 40px;
-    }
-
-    .razlozi {
-        font-size: $basicParagraf;
-        padding-top: 30px;
-    }
     p {
-        padding: 3vh 10%;
-        text-align: left;
+        margin: 25px 80px;
+
     }
-}
 
-#contact {
-    background: black;
-    padding: 4vh 0;
-    display: flex;
-    justify-content: space-evenly;
+    a{
+        padding: 1vh 1vw;
+        align-self: center;
+        color: #fff;
 
-    form{
-        color: white;
-        font-size: 1.2rem;
-        outline: none;
-        
-        input{
-            width: 20vw;
-            height: 5vh;
+        &:hover{
+            background-color: white;
+            padding: 1vh 1vw;
+            color: black;
+            transition: 0.1s ease-in;
         }
-
-        textarea{
-            width: 20vw;
-        }
-
     }
 }
