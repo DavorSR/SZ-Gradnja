@@ -396,7 +396,7 @@ nav .nav-menu .nav-link a:hover {
   font-size: clamp(1em, 1.5vw, 4rem);
 }
 
-footer {
+.copyright {
   background: #1a1717;
   width: 100%;
   display: flex;
@@ -405,15 +405,15 @@ footer {
   font-weight: 900;
   color: gray;
 }
-footer p {
+.copyright p {
   margin: 25px 80px;
 }
-footer a {
+.copyright a {
   padding: 1vh 1vw;
   align-self: center;
   color: #fff;
 }
-footer a:hover {
+.copyright a:hover {
   background-color: white;
   padding: 1vh 1vw;
   color: black;
