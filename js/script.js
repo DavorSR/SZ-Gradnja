@@ -13,11 +13,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.onclick = () =>{
     navMenu.classList.remove("active");
 })
 
-// hamburger.addEventListener("click", () => {
-//     hamburger.classList.toggle("active");
-//     navMenu.classList.toggle("active");
-// })
-
 
 
 // Intersection Observer
@@ -70,3 +65,4 @@ galerija.forEach(image => {
 document.querySelector('.galerija_popup-slika span').onclick = () => {
     popup.style.display = 'none';
 }
+
