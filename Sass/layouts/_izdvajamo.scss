@@ -31,7 +31,7 @@
         background-color: $mainColor;
         width: 30%;
         padding: 2rem 0;
-        margin: 10px;
+        margin: 10px auto;
         color: white;
         @include eXSmall {
             width: 100%;
@@ -59,7 +59,7 @@
         border: 5px solid $mainColor;
         width: 30%;
         padding: 2rem 0;
-        margin: 10px;
+        margin: 10px auto;
         @include eXSmall {
            width: 100%;
         }

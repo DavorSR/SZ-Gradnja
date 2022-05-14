@@ -11,6 +11,7 @@
     @include tablet{
         height: 45vh;
     }
+ 
 
     &_wrrap {
         width: 60%;
@@ -18,7 +19,9 @@
         top: 25%;
         left: 5%;
         @include eXSmall {
-            width: 100%;
+            top: 10%;
+            width: 90% !important;
+
         }
         @include tablet {
             width: 100%;

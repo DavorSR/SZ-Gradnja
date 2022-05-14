@@ -18,5 +18,8 @@
         padding: 3vh 10%;
         text-align: left;
         font-size: $basicParagraf;
+        @include eXSmall{
+            text-align: justify;
+        }
     }
 }

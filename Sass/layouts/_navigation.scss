@@ -13,7 +13,7 @@ nav {
 
         span{
 
-            color: #e0d311;
+            color: $mainColor;
         }
     }
 
@@ -27,7 +27,7 @@ nav {
         @include eXSmall {
             position: fixed;
             left: -100%;
-            top: 70px;
+            top: 60px;
             gap: 0;
             flex-direction: column;
             background: rgb(40, 34, 34);
